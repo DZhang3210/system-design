@@ -5,3 +5,9 @@ save message="update":
 
 open:
     code .
+
+open-gui:
+    cmd.exe /c "Start Viewer.cmd"
+
+deps:
+    cd viewer-app && npm install
