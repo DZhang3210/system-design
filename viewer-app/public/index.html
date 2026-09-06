@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>System Design Practice — Vault Viewer</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <button type="button" id="sidebar-toggle" class="sidebar-toggle-btn" title="Problem list" aria-label="Toggle problem list">☰</button>
+    <a href="#/" class="brand">System Design Practice</a>
+    <nav>
+      <a href="#/">Home</a>
+      <a href="#/process">Process</a>
+    </nav>
+    <button type="button" id="window-add-btn" class="sidebar-toggle-btn window-add-btn" title="New window" aria-label="New window">+</button>
+  </header>
+  <div id="sidebar-backdrop" class="sidebar-backdrop"></div>
+  <aside id="problem-sidebar" class="problem-sidebar">
+    <div class="problem-sidebar-header">
+      <span>Problems</span>
+      <button type="button" id="sidebar-close" class="sidebar-close-btn" aria-label="Close problem list">✕</button>
+    </div>
+    <div id="problem-sidebar-list" class="problem-sidebar-list"></div>
+  </aside>
+  <div id="context-bar" class="context-bar"></div>
+  <div id="window-grid" class="window-grid"></div>
+  <main id="app"></main>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "name": "system-design-vault-viewer",
+  "version": "1.0.0",
+  "description": "Local read-only viewer for the System Design + Terraform Practice vault.",
+  "private": true,
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

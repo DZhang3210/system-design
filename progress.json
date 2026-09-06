@@ -1,0 +1,13 @@
+{
+  "_note": "Structured rollup for querying (grep/jq a problem slug) rather than reading in full every session. Each problem tracks its three phases independently — this mirrors/aggregates each phase attempt's own attempt.json, it is not hand-authored detail, so it should stay in sync with what's in each attempt folder rather than diverge from it.",
+  "problems": {
+    "orders-api-uptime": {
+      "tier": 1,
+      "phases": {
+        "design": {"attempt_count": 0, "latest_attempt": null, "latest_verdict": null},
+        "terraform": {"attempt_count": 0, "latest_attempt": null, "latest_verdict": null},
+        "test": {"attempt_count": 0, "latest_attempt": null, "latest_verdict": null}
+      }
+    }
+  }
+}
